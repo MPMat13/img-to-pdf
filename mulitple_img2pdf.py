@@ -20,6 +20,13 @@ img_lst = []
 for i in os.listdir(img_dir):
 	if i.endswith('.jpg'):
 		# t += 1
+		
+		# option to resize images half on width and heighht
+		# img = Image.open(img_dir + '/' + i)
+		# new_img = img.resize((round(img.width * 0.5), round(img.height * 0.5)))
+		# new_img.save(img_dir + '/new_' + i)
+		# img_lst.append(img_dir + '/new_' + i)
+		
 		img_lst.append(img_dir + '/' +i)
 		print(f'Added file {i} to page list.')
 
